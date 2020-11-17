@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/ant-design/bisheng-plugin-antd#readme",
   "dependencies": {
-    "antd": "^3.26.20",
+    "antd": "latest",
     "bisheng-plugin-react": "0.6.3",
     "classnames": "^2.2.5",
     "jsonml.js": "^0.1.0",
