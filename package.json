@@ -1,6 +1,6 @@
 {
   "name": "bisheng-plugin-antd",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "To support ant.design-like websites.",
   "scripts": {
     "lint": "eslint ./src",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/ant-design/bisheng-plugin-antd#readme",
   "dependencies": {
-    "antd": "latest",
+    "antd": "^3.26.20",
     "bisheng-plugin-react": "0.6.3",
     "classnames": "^2.2.5",
     "jsonml.js": "^0.1.0",
