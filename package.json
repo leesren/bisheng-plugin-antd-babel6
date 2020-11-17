@@ -1,0 +1,78 @@
+{
+  "name": "bisheng-plugin-antd",
+  "version": "1.0.1",
+  "description": "To support ant.design-like websites.",
+  "scripts": {
+    "lint": "eslint ./src",
+    "eslint-fix": "eslint --fix ./src",
+    "babel": "babel ./src --out-dir ./lib",
+    "prepublishOnly": "npm run babel && cp ./src/template.html ./lib && np --yolo --no-publish",
+    "postpublish": "rm -rf lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ant-design/bisheng-plugin-antd.git"
+  },
+  "keywords": [
+    "bisheng",
+    "plugin",
+    "antd",
+    "ant",
+    "design"
+  ],
+  "author": "Benjy Cui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ant-design/bisheng-plugin-antd/issues"
+  },
+  "homepage": "https://github.com/ant-design/bisheng-plugin-antd#readme",
+  "dependencies": {
+    "antd": "^3.26.20",
+    "bisheng-plugin-react": "^1.1.1",
+    "classnames": "^2.2.5",
+    "jsonml.js": "^0.1.0",
+    "nunjucks": "^2.4.2",
+    "postcss": "^6.0.14",
+    "postcss-pxtorem": "^4.0.1",
+    "prismjs": "^1.16.0",
+    "react-router": "^5.1.2",
+    "react-sublime-video": "^0.2.0",
+    "sylvanas": "^0.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-transform-class": "^0.3.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "jsonml-to-react-element": "^1.1.11",
+    "np": "^5.0.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "typescript": "^3.6.3"
+  },
+  "peerDependencies": {
+    "bisheng": ">=0.22.0",
+    "bisheng-plugin-react": ">=0.5.0",
+    "jsonml-to-react-element": "^1.0.0",
+    "react": "^16.0.0",
+    "typescript": "^3.6.3"
+  }
+}

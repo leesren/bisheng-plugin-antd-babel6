@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "transform-react-jsx",
+    "transform-runtime",
+    "transform-class",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    [
+      "add-module-exports",
+      {
+        "addDefaultProperty": true
+      }
+    ]
+  ],
+  "presets": ["react", "env"]
+}
